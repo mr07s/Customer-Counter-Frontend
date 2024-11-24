@@ -20,7 +20,8 @@ function App() {
   const User = JSON.parse(localStorage.getItem("Profile"));
   // console.log(User)
   const userId = User?.result?._id;
-  // console.log(userId)
+  console.log(process.env.REACT_APP_FILE);
+  console.log(process.env.REACT_APP_FIREBASE_API_KEY);
 
   useEffect(() => {
     // console.log('render');
