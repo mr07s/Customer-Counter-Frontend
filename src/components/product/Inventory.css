@@ -1,0 +1,58 @@
+.sellContainer {
+  position: fixed;
+  z-index: 10;
+  flex-direction: column;
+  /* background-color: black; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: white;
+  /* opacity: 0.2; */
+}
+.sellModel {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: white;
+}
+
+.sell_btn {
+  background-color: rgb(64, 69, 118);
+  border-radius: 15px;
+  color: white;
+}
+.sell_btn:hover {
+  background-color: rgb(52, 42, 28);
+}
+.closenav {
+  width: 30px;
+  /* position: fixed; */
+  z-index: 100;
+  /* background-color: white; */
+  display: flex;
+  color: white;
+  margin-top: 7rem;
+  margin-right: auto;
+
+  /* position: fixed; */
+  height: 45.5px;
+  cursor: pointer;
+}
+.sell_btn_model {
+  background-color: rgb(120, 172, 255);
+  width: 100%;
+  padding: 0.2rem;
+  border-radius: 15px;
+}
+.sell_btn_model:hover {
+  background-color: rgb(75, 160, 234);
+}
+.Inventory {
+  margin-top: -5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

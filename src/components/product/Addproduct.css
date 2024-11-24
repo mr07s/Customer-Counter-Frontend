@@ -1,0 +1,124 @@
+
+body{
+    /* background-image: url('../images/3dmarbel imgae-1.jpg') !important; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: fill;
+   
+  }
+  
+  .outerbox{
+height: 100vh;
+
+  }
+  .formholder {
+      /* display: flex;
+      flex-direction: column;
+      margin:3rem ;
+      gap: 1.5rem;
+      padding: 1rem;
+      max-width: 30vw;
+      min-width: 25vw;
+      justify-content: center;
+      align-items: center; */
+box-shadow: none;
+     
+    }
+ .Productform{
+  padding: 10px;
+  margin-top: 7rem;
+  align-items: center;
+  /* max-width: 10vw; */
+  min-width: 20vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  display: grid;
+  grid: 89px /auto auto;
+  /* border: 1px solid black; */
+
+ }
+    
+    form {
+      display: grid;
+      gap: 1.2rem;
+      justify-content: center;
+     /* min-width: 85vw;
+    max-width: 88vw; */
+    margin: 2rem;
+    /* font-size: 2rem; */
+    box-sizing: border-box;
+     /* font-family: 'Edu NSW ACT Foundation', cursive; */
+    /* font-family: 'Pacifico', cursive; */
+    /* font-family: 'Abel', sans-serif; */
+    font-family: 'Roboto Slab', serif;
+    }
+    form input{
+
+/* background-color: black; */
+font-size: 1.7rem;
+color: rgb(10, 10, 53);
+/* width: 75%; */
+/* display: flex;
+justify-content: center; */
+    }
+
+form>label>h6{
+  color: black;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+
+
+    form td:last-child 
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 7rem;
+    
+     
+    }
+    form td:last-child button
+    {
+      height: 3rem;
+    }
+    
+    form
+    {
+      font-size: 1.2rem; 
+    }
+    .submit{
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  border-radius:50px ;
+  color: rgb(88, 202, 240);
+  background-color: rgb(0, 31, 67);
+  font-size: 1.5rem;
+  
+  
+  
+  }
+    .submit:hover{
+  
+  color: rgb(218, 159, 9);
+  color: white;
+  background-color: rgb(33, 39, 46);
+  
+    }
+
+    .submit button:disabled,
+    button[disabled]{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+      pointer-events: none;
+    }
+
+
+    @media screen and (max-width: 550px) {
+      .Productform{
+         display: grid;
+     grid: 89px/auto;
+      }
+       }

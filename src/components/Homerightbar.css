@@ -1,0 +1,56 @@
+
+.heading-1{
+    margin-top: 7em;
+    font-family: 'Calistoga', cursive;
+    color: black;
+    font-weight: 900;
+    /* background-color: white; */
+    /* font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;   */
+    /* border: 1px solid black; */
+    
+}
+.container-1>p{
+color: rgb(0, 0, 0);
+font-family: 'Bai Jamjuree', sans-serif;
+font-weight: bold;
+font-size: 1.5rem;
+/* border: 2px solid black; */
+/* font-style: italic; */
+margin-top: 1.5rem;
+margin-bottom: 1.5rem;
+/* box-shadow: 2px 2px black; */
+margin-left: 1.5rem;
+border: 1px solid black;
+padding: 1.2rem;
+border-radius: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.container-1>p:hover{
+    /* font-weight: bolder !important;
+     */
+     font-size: 2rem;
+    cursor: pointer;
+}
+.miniheader{
+    border: 1px solid black;
+    width: 15rem;
+    border-radius: 30px;
+    background-color: rgb(120, 213, 247);
+display: flex;
+justify-content: center;
+font-weight: bolder;
+}
+.miniheader:hover
+{
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+

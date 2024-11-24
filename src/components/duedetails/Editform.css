@@ -1,0 +1,66 @@
+.Editform
+{
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* backdrop-filter: blur(7px); */
+padding: 10px;
+margin-top: 7rem;
+align-items: center;
+/* max-width: 10vw; */
+min-width: 20vw;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+display: grid;
+grid: 89px /auto auto;
+/* border: 1px solid black; */
+}
+.Editform input{
+    /* border: 1px solid black; */
+    padding: 5px;
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+.Editform button{
+    
+background-color: rgb(138, 51, 14);
+height: 2rem;
+border-radius: 50px;
+color: white;
+font-family: 'Sofia Sans Semi Condensed', sans-serif;
+/* font-family: 'Tilt Prism', cursive; */
+font-weight: 900;
+font-size: 30px;
+width: 10rem;
+
+}
+.Editform button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  pointer-events: none;
+}
+
+.Editform button:hover{
+border: 1px solid black;
+background-color: rgb(158, 67, 28);
+
+color:rgb(186, 182, 182);
+font-weight: bold;
+cursor: pointer;
+}
+
+h2{
+    color: rgba(0, 0, 0, 0.849);
+}
+.Editform>label>h5{
+font-weight: bold;
+color: rgb(9, 7, 36);
+}
+
+
+
+@media screen and (max-width: 550px) {
+ .Editform{
+    display: grid;
+grid: 89px/auto;
+ }
+  }

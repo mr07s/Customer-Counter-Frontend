@@ -1,0 +1,177 @@
+.navbar {
+  /* border: 1px solid black; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* opacity: 0.3; */
+  min-height: 3rem;
+  background-color: rgb(57, 56, 56);
+  display: flex;
+  /* position: fixed; */
+  width: 100vw;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+}
+
+.navitems {
+  display: flex;
+  margin-right: 3.5rem;
+}
+.navbarright {
+  display: flex;
+  width: 30vw;
+  justify-content: center;
+}
+
+.navbarleft {
+  display: flex;
+  width: 60vw;
+}
+
+ul {
+  text-decoration: none;
+}
+.navlist {
+  list-style: none;
+  margin-right: 5rem;
+}
+.navlist a {
+  text-decoration: none;
+  color: rgb(88, 202, 240);
+  font-weight: 600;
+  font-size: 15px;
+  margin: 10px;
+  font-family: "Comfortaa", cursive;
+}
+.navlist a:hover {
+  color: white;
+}
+
+.authbutton {
+  border: none;
+  border-radius: 50px;
+  margin-right: 1rem;
+  background-color: rgb(57, 56, 56);
+}
+
+.authbutton:hover {
+  /* background-color: white; */
+  background-color: rgb(57, 56, 56);
+
+  /* color: black; */
+}
+
+.navsidebarcontainer {
+  display: none;
+}
+/* @keyframes example {
+    
+  } */
+
+@media screen and (max-width: 1150px) {
+  .navsidebarcontainer {
+    height: 100vh;
+    width: 11rem;
+    /* display: contents; */
+    position: fixed;
+    z-index: 500;
+    display: flex;
+    background-color: rgb(57, 56, 56);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navsidebar {
+    display: contents;
+    height: 100vh;
+    width: 13rem;
+    flex-direction: row;
+    transition: 0.3s;
+  }
+  .navsidebarright {
+    /* display: contents; */
+  }
+
+  .navsidebarleft {
+    display: flex;
+    width: 11rem;
+    flex-direction: row;
+    height: 60%;
+    margin-top: 3rem;
+  }
+  .navsidebaritems {
+    display: flex;
+    flex-direction: column;
+    width: 11rem;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .navsidebarlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .hamburger {
+    width: 30px;
+
+    margin-left: 1rem;
+  }
+  .navsidebarselect {
+    width: 11rem;
+    height: 3rem;
+    display: contents;
+    position: absolute;
+    z-index: 700;
+  }
+  .closenav {
+    display: flex;
+    top: 0;
+    width: 30px;
+    position: fixed;
+    z-index: 700;
+    /* background-color: white; */
+    margin-left: 1rem;
+    color: white;
+    margin-top: 0px;
+    height: 45.5px;
+  }
+  .navsidebarlist {
+    list-style: none;
+    margin-right: 5rem;
+  }
+  .navsidebarlist a {
+    text-decoration: none;
+    color: rgb(88, 202, 240);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px;
+    font-family: "Comfortaa", cursive;
+  }
+  .navsidebarlist a:hover {
+    color: white;
+  }
+  .navsidebarright > ul {
+    padding-left: 0;
+    margin-top: 1.2rem;
+  }
+  .sideauthbutton {
+    border: none;
+    border-radius: 50px;
+    margin-right: 1rem;
+    /* background-color: rgb(245, 224, 224); */
+    background-color: rgb(57, 56, 56);
+    color: rgb(88, 202, 240);
+    margin-top: 2rem;
+    margin: 10px;
+  }
+  .sideauthbutton > a {
+    color: rgb(88, 202, 240);
+  }
+}

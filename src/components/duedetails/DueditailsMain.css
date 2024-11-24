@@ -1,0 +1,151 @@
+body {
+  /* background-image: url('../images/istockphoto-636013786-1024x1024.jpg'); */
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(234, 234, 234);
+}
+/* .bodybox{ */
+/* background-color: white; */
+/* border: 10px solid black;
+  height: 100vh;
+  width: 100vw;
+} */
+* {
+  font-size: 0.95rem !important;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 95vw;
+  min-width: 90vw;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+  padding-top: 0;
+  margin-top: 0;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 70vw;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    */
+  overflow: "auto";
+}
+
+th,
+td {
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.95rem !important;
+  color: rgb(5, 13, 82) !important;
+  font-weight: bold;
+  /* font-family: 'Edu NSW ACT Foundation', cursive; */
+  /* font-family: 'Pacifico', cursive; */
+  /* font-family: 'Abel', sans-serif; */
+  /* border-bottom: 1px solid black;*/
+  font-family: "Roboto Slab", serif;
+}
+
+table td {
+  border: 1px !important;
+  border: 1px solid rgb(45, 45, 45) !important;
+  /* border: none; */
+}
+th {
+  background-color: rgb(117, 201, 250);
+  /* backdrop-filter: blur(7px); */
+  /*box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    */
+}
+
+td {
+  /* background-color: rgb(205, 235, 253); */
+  /* opacity: 0.2; */
+  /* backdrop-filter: blur(7px);*/
+  color: rgb(10, 8, 8) !important;
+  font-weight: 600;
+}
+
+.form {
+  display: grid;
+  gap: 1.2rem;
+  justify-content: center;
+  min-width: 85vw;
+  max-width: 88vw;
+  margin: 2rem;
+  box-sizing: border-box;
+  overflow: auto;
+  height: 70vh;
+}
+
+.form td:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
+.form td:last-child button {
+  height: 2rem;
+}
+
+.form {
+  font-size: 1.2rem;
+}
+.formaddbtn {
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50px;
+  color: rgb(88, 202, 240);
+  background-color: rgb(33, 39, 46);
+  font-size: 1.5rem;
+}
+.formaddbtn:hover {
+  /* color: rgb(218, 159, 9); */
+  color: white;
+  background-color: rgb(33, 39, 46);
+}
+
+/* Table scroll bar design*/
+.form {
+  scrollbar-width: thin;
+}
+.form::-webkit-scrollbar {
+  width: 1.2vw;
+}
+.form::-webkit-scrollbar-thumb {
+  background-color: rgb(109, 109, 109);
+  border: 5px solid white;
+  border-radius: 10px;
+  /* width: 50%; */
+}
+.form::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(168, 167, 167);
+}
+.form::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.totalDue {
+  border: 1px solid black;
+  width: 100vw;
+}
+.totalDue > h1 {
+  font-weight: bold;
+  height: 3rem;
+  font-size: 2rem !important;
+}
