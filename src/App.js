@@ -14,6 +14,7 @@ import ShowProduct from "./components/product/ShowProduct";
 import Home from "./components/Home";
 import Paymenthistory from "./components/Paymenthistory/Paymenthistory";
 import Inventory from "./components/product/Inventory";
+import Status from "./components/Status";
 function App() {
   const dispatch = useDispatch();
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/showproduct" element={<ShowProduct />}></Route>
         <Route path="/addduedetails" element={<Showduedetail />}></Route>
         <Route path="/inventory" element={<Inventory />}></Route>
+        <Route path="/phonepay/status/:marchentId" element={<Status />}></Route>
         <Route path="/paymenthistory/:id" element={<Paymenthistory />}></Route>
       </Routes>
     </>
