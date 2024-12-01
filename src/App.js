@@ -44,6 +44,7 @@ function App() {
         <Route path="/addduedetails" element={<Showduedetail />}></Route>
         <Route path="/inventory" element={<Inventory />}></Route>
         <Route path="/phonepay/status/:marchentId" element={<Status />}></Route>
+        <Route path="/payment/success" element={<Status />}></Route>
         <Route path="/paymenthistory/:id" element={<Paymenthistory />}></Route>
       </Routes>
     </>

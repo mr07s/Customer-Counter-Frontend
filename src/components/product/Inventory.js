@@ -19,6 +19,7 @@ const Inventory = () => {
   const [sellingQuantity, setSellingQuantity] = useState();
   const [fromdata, setFromData] = useState();
   const [soldDate, setSodDate] = useState();
+  const [amount, setAmount] = useState();
   const dispatch = useDispatch();
 
   const [search, setSearch] = useState("");
@@ -49,22 +50,15 @@ const Inventory = () => {
       alert("This much ammount is not in stock");
       return;
     }
-    const res = await axios.post("http://localhost:5000/phonepay/pay");
-    const marchentTransId = res.data.data.merchantTransactionId;
-    console.log(marchentTransId);
-    handlePhonepayPayment(res);
-    const payment_res = await axios.post(
-      `http://localhost:5000/phonepay/afterpay/${marchentTransId}`
-    );
-    console.log(payment_res);
+
     console.log(res);
     console.log("res");
     console.log(res);
     console.log("Hii");
     console.log(fromdata);
-    if (payment_res.data == "PAYMENT_SUCCESS") {
-      return;
-    }
+    // if (payment_res.data == "PAYMENT_SUCCESS") {
+    //   return;
+    // }
     let tempproductQuant = productQuantity;
     //new product quantity
     let newPQ = parseInt(tempproductQuant) - sellingQuantity;
@@ -84,7 +78,19 @@ const Inventory = () => {
     setOpen(false);
   };
 
-  const handlePhonepayPayment = async (res) => {
+  const handlePhonepayPayment = async (e) => {
+    e.preventDefault();
+    console.log(amount);
+    const res = await axios.post("http://localhost:5000/phonepay/pay", {
+      amount,
+    });
+    // const marchentTransId = res.data.data.merchantTransactionId;
+    // console.log(marchentTransId);
+
+    // const payment_res = await axios.post(
+    //   `http://localhost:5000/phonepay/afterpay/${marchentTransId}`
+    // );
+    // console.log(payment_res);
     console.log(res.data.data.instrumentResponse.redirectInfo.url);
     const url = res.data.data.instrumentResponse.redirectInfo.url;
     window.location.href = url;
@@ -188,15 +194,33 @@ const Inventory = () => {
               )
             )}
         </table>
+        <div style={{ margin: "2rem" }}>
+          <input
+            placeholder="Price"
+            type="number"
+            onChange={(e) => {
+              setAmount(e.target.value);
+            }}
+          />
+          <button
+            // className="navlist authbutton"
+            // style={{ }}
+            style={{
+              height: "2rem",
+              background: "black",
+              width: "5rem",
+              color: "white",
+              borderRadius: "2rem",
+              marginTop: "1rem",
+            }}
+            onClick={(e) => {
+              handlePhonepayPayment(e);
+            }}
+          >
+            Pay
+          </button>
+        </div>
       </div>
-      <table>
-        <tr>
-          <th>Product Name</th>
-          <th>Product Name</th>
-          <th>Product Name</th>
-          <th>Product Name</th>
-        </tr>
-      </table>
     </>
   );
 };
